@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="lib/w3c/w3.css">
+    <link rel="stylesheet" href="../style/login.css">
+    <title>Administração - {{Sistema}}</title>
+    <script>
+        function login() {
+            window.location.href = 'master.html';
+        }
+    </script>
+</head>
+
+<body class="w3-container">
+    <div class="w3-row">
+        <div class="w3-col">
+            <form class="w3-card-4 w3-margin-top">
+                <div class="w3-row w3-padding-24">
+                    <div class="w3-col w3-center">
+                        <img src="../assets/image/Logo.png" alt="Edelweiss logo">
+                        <h1>Login</h1>
+                        <h5>Administração - {{nome do sistema}}</h5>
+                    </div>
+                </div>
+                <div class="w3-row-padding w3-margin-bottom">
+                    <div class="w3-col">
+                        <label>Usuário</label>
+                        <input id="txtUser" class="w3-input w3-border" type="text" />
+                    </div>
+                </div>
+                <div class="w3-row-padding w3-margin-bottom">
+                    <div class="w3-col">
+                        <label>Senha</label>
+                        <input id="txtPassword" class="w3-input w3-border" type="password" />
+                    </div>
+                </div>
+                <div class="w3-row-padding w3-margin-bottom">
+                    <div class="w3-col s6 m6 l6">
+                        <input id="btnCancel" class="w3-btn w3-block w3-border w3-white w3-border-gray" type="button"
+                            value="Cancelar" />
+                    </div>
+                    <div class="w3-col s6 m6 l6">
+                        <input id="btnLogin" class="w3-btn w3-block w3-green" type="button" value="Login"
+                            onclick="login()" />
+                    </div>
+                </div>
+                <div class="w3-padding"></div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

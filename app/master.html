@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="lib/w3c/w3.css">
+    <link rel="stylesheet" href="../assets/fontawesome-free-5.11.2-web/css/all.css">
+    <title>Administração</title>
+    <script>
+        function home() {
+            window.location.href = 'master.html';
+        }
+
+        function exit() {
+            window.location.href = 'login.html';
+        }
+
+        function users() {
+            window.location.href = 'users.html';
+        }
+    </script>
+</head>
+
+<body>
+    <header class="w3-container w3-blue-gray w3-display-container">
+        <div class="w3-bar">
+            <a href="master.html" class="w3-bar-item">
+                <img src="../assets/image/LogoHorizontal.png" height="30">
+            </a>
+            <div class="w3-bar-item">
+                <h3 style="margin: 0px;">Administração - {{nome do sistema}}</h3>
+            </div>
+            <div class="w3-bar-item w3-right">
+                <button class="w3-button w3-small w3-right w3-blue-gray w3-border" type="button" onclick="exit()">
+                    Sair
+                </button>
+            </div>
+            <div class="w3-bar-item w3-right">
+                <button class="w3-button w3-small w3-white w3-border w3-border-white" type="button">
+                    <div style="color:#607d8b">
+                            <i class="fas fa-user w3-margin-right"></i>Usuário logado
+                    </div>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="w3-row">
+        <aside id="asMenu" class="w3-col s12 m3 l2">
+            <div class="w3-card-4 w3-margin">
+                <div class="w3-bar-block">
+                    <button class="w3-bar-item w3-button w3-blue-grey" type="button" onclick="home()">
+                        <i class="fas fa-home w3-margin-right"></i>Home
+                    </button>
+                </div>
+            </div>
+            <div class="w3-card-4 w3-margin">
+                <div class="w3-bar-block">
+                    <button class="w3-bar-item w3-button w3-blue-grey" type="button" onclick="users()">
+                        <i class="fas fa-users w3-margin-right"></i>Usuários
+                    </button>
+                </div>
+            </div>
+        </aside>
+        <div class="w3-col s12 m9 l10">
+            <section id="content">
+                <!-- Content here! -->
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
